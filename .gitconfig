@@ -1,0 +1,7 @@
+[user]
+	name = Ivan Kucherenko
+	email = i.kucherenko@1er.app
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
