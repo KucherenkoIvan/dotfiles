@@ -1,13 +1,18 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/Library/Python/3.9/bin/
+export PATH="$PATH:$(go env GOPATH)/bin:$GOROOT/bin:$GOPATH/bin"
+
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-alias clip="xclip -sel clip"
+alias clip="pbcopy"
 alias gs="git status"
 alias gadd="git add"
 alias vim="nvim"
